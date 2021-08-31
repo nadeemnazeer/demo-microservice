@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 
 const connect = () => {
 
-    const url = 'mongodb://localhost:27017';
+    const url = 'mongodb://mongo:27017';
 
     mongoose.connect(url)
 }
