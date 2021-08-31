@@ -1,0 +1,16 @@
+version: '3.7'
+services:
+  demo-microservice:
+    env_file:
+      .env
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    container_name: demo-microservice
+    depends_on:
+      - mongo
+  mongo:
+    image: mongo
+    container_name: mongo
