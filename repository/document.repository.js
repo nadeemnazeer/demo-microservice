@@ -12,6 +12,12 @@ class DocumentRepository {
         return documents;
     }
 
+    async createDocument(document) {
+        let data = {};
+        data = await Document.create(document);
+        return data;
+    }
+
 }
 
 module.exports = new DocumentRepository();

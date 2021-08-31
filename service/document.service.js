@@ -8,6 +8,10 @@ class DocumentService {
         return await documentRepository.getDocuments();
     }
 
+    async createDocument(document) {
+        return await documentRepository.createDocument(document);
+    }
+
 
 }
 

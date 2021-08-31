@@ -6,6 +6,9 @@ class DocumentController {
         return await documentService.getDocuments();
     }
 
+    async createDocument(document) {
+        return await documentService.createDocument(document);
+    }
 
 }
 module.exports = new DocumentController();
