@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 
 const connect = () => {
 
-    const url = 'mongodb://mongo:27017';
+    const url = process.env.MONGO_CONNECTION_URL;
 
     mongoose.connect(url)
 }
