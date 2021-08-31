@@ -1,0 +1,19 @@
+{
+  "name": "demo-microservice",
+  "version": "1.0.0",
+  "description": "A small demo Nodejs backend microservice that responds to queries on an endpoint(s) and uses a database to persist information (MongoDB).",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nadeemnazeer/demo-microservice.git"
+  },
+  "author": "Nadeem Nazeer",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nadeemnazeer/demo-microservice/issues"
+  },
+  "homepage": "https://github.com/nadeemnazeer/demo-microservice#readme"
+}
