@@ -1,11 +1,20 @@
 const express = require('express')
+const bodyParser = require('body-parser')
 const app = express()
 const port = 3000
 
+const documentController = require('./controller/document.controller')
+
+app.use(bodyParser.json());
 app.get('/', (req, res) => {
-  res.send('Hello from demo miscroservice!')
-})
+    res.send('API Version: '+process.env.npm_package_version)
+  });
+
+app.get('/documents', (req, res) => {
+    documentController.getDocuments().then(data => res.json(data));
+});
+
 
 app.listen(port, () => {
   console.log(`Example app listening at http://localhost:${port}`)
-})
+});
