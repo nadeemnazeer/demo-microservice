@@ -1,6 +1,6 @@
 {
   "name": "demo-microservice",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "A small demo Nodejs backend microservice that responds to queries on an endpoint(s) and uses a database to persist information (MongoDB).",
   "main": "index.js",
   "scripts": {
