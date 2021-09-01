@@ -19,6 +19,6 @@ app.post('/document', (req, res) => {
   documentController.createDocument(req.body.document).then(data => res.json(data));
 });
 
-app.listen(port, () => {
-  console.log(`Example app listening at http://localhost:${port}`)
+app.listen(port,'0.0.0.0', () => {
+  console.log(`App listening at http://0.0.0.0:${port}`)
 });
