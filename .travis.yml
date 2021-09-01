@@ -18,4 +18,4 @@ before_install:
 - chmod 600 ./id_rsa
 - echo -e "Host $SERVER_IP_ADDRESS\n\tStrictHostKeyChecking no\n" >> ~/.ssh/config
 - ssh-add ./id_rsa
-- ssh -i ./id_rsa TravisCIDeployKey@34.125.5.59 "$DEPLOY_SCRIPT_PATH"
+- ssh -i ./id_rsa TravisCIDeployKey@34.125.5.59 "cd demo-microservice; $DEPLOY_SCRIPT_PATH"
