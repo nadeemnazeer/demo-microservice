@@ -1,0 +1,11 @@
+dist: bionic
+branches:
+  only:
+  - master
+language: node_js
+script: 'true'
+deploy:
+- provider: script
+  script: bash scripts/docker-push
+  on:
+    branch: master
