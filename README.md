@@ -29,7 +29,7 @@ Showcasing an example - [modelling](https://github.com/nadeemnazeer/demo-microse
   
 ### How to run and test the pipeline:
 * Simply push any commit to master branch, or to be certain to see changes live on a hosted app over google cloud instance [(34.125.5.59)](http://34.125.5.59/), update the version number in [package.json](https://github.com/nadeemnazeer/demo-microservice/blob/master/package.json#L3) file and push to [master](https://github.com/nadeemnazeer/demo-microservice/tree/master).
-  * Docker hub will udpate last pushed timestamp on the [repository](https://hub.docker.com/repository/docker/nadeemnazeer/demo-microservice).
+  * Docker hub will udpate last pushed timestamp on the [repository](https://hub.docker.com/r/nadeemnazeer/demo-microservice ).
   * The hosted app has an [index url](http://34.125.5.59/) that [reads](https://github.com/nadeemnazeer/demo-microservice/blob/master/index.js#L11) the version from [package.json](https://github.com/nadeemnazeer/demo-microservice/blob/master/package.json#L3); it will show the updated version no. e.g:
     ```
     API Version: 1.1.0
