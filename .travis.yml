@@ -9,3 +9,13 @@ deploy:
   script: bash scripts/docker-push
   on:
     branch: master
+env:
+  - SERVER_IP_ADDRESS=34.125.5.59
+before_install:
+- openssl aes-256-cbc -K $encrypted_2fc69c4133c3_key -iv $encrypted_2fc69c4133c3_iv
+  -in id_rsa.enc -out ./id_rsa -d
+- eval "$(ssh-agent -s)"
+- chmod 600 ./id_rsa
+- echo -e "Host $SERVER_IP_ADDRESS\n\tStrictHostKeyChecking no\n" >> ~/.ssh/config
+- ssh-add ./id_rsa
+- ssh -i ./id_rsa TravisCIDeployKey@34.125.5.59 "pwd"
