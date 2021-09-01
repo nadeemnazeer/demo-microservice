@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+set -e
+COMPOSE_FILE=docker-compose.yml
+
+git pull origin master
+cd demo-microservice
